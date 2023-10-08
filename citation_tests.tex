@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+
+\usepackage{proposed_biblatex_citations}
+\usepackage{parskip}
+\usepackage[margin=1in]{geometry}
+\usepackage{csquotes}
+\MakeOuterQuote{"}
+
+\bibliography{citation_tests}
+
+\title{Citations Tests for TMLR BibLaTeX Proposal}
+\author{BibLaTeX TMLR Proposal Contributors}
+
+\begin{document}
+
+\maketitle
+
+Test 1: same author with multiple years: \cite{wilson20,wilson21}
+
+Test 2: in \textsc{article}, don't make words like "Gaussian" lowercase: \fullcite{wilson21}
+
+Test 3: support \textsc{natbib} backwards compatibility: \citet{wilson20}, \citep{wilson20}
+
+\printbibliography
+
+\end{document}
